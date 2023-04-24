@@ -9,12 +9,12 @@ import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import React from 'react'
 
-const Markdown = ({markdown}) => {
+const Markdown = ({markdown, title}) => {
     // const markdown = `Just a link: https://reactjs.com.`;
     const syntaxTheme = vscDarkPlus;
   return (
     <div className="prose m-auto lg:border border-slate-50 lg:p-10 lg:rounded-lg lg:shadow-lg">
-      {/* <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} /> */}
+      <h1>{title}</h1>
       <ReactMarkdown
         className="markdown-body"
         remarkPlugins={[remarkSlug, remarkToc, remarkGfm]}

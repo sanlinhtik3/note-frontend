@@ -55,8 +55,12 @@
 
 @font-face {
   font-family: "mm";
-  src: url("./assets/Fonts/Z06-Walone/Z06-Walone-Regular.ttf");
+  src: url("./assets/fonts/Z06-Walone/Z06-Walone Bold.ttf");
   font-display: fallback;
+}
+
+*{
+  font-family: "mm", 'Poppins', sans-serif;
 }
 
 /* Markdown */

@@ -12,6 +12,9 @@ import Loading from './pages/Loading';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Detail from './pages/Detail';
+import Master from './pages/Master';
+import Layout from './pages/Layout';
 
 function App() {
   const dispatch = useDispatch()
@@ -40,7 +43,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/note/:id" element={<Home />} />
+          <Route path="/master" element={<Layout />} />
+          <Route path="/note/:id" element={<Detail />} />
           <Route path="/note/create" element={<CreatePost />} />
           <Route path="/note/edit/:id" element={<EditPost />} />
 

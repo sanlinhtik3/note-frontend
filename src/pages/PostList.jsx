@@ -1,16 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Markdown from "../components/Markdown";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getNote } from "../features/note/noteSlice";
 
 const PostList = ({note}) => {
+  const dispatch = useDispatch()
   const { user, isLoading, isError, isSuccess, message } = useSelector(state => state.auth)
+
+  
 
   useEffect(() => {
     if(isError) {
       console.log(message)
     }
-  }, [note, user])
+    
+  }, [note, user, dispatch])
 
   return (
     <>
