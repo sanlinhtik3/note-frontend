@@ -48,7 +48,7 @@ const EditPost = () => {
 
   return (
     <>
-      <div className=" container mx-auto pt-10 px-40">
+      <div className=" container mx-auto pt-10 px-5 lg:px-40">
         <Link onClick={() => dispatch(getNote(id))} to="/" className=" bg-green-500 text-white px-3 py-2 rounded-xl text-xs ring-2 ring-green-200">
           <i className="bi bi-arrow-left-circle"></i> Back
         </Link>
