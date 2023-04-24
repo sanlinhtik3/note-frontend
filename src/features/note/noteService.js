@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 // local
-const API_URL = "http://localhost:8000/api/note/";
+// const API_URL = "http://localhost:8000/api/note/";
 
 // Onvercel
-// const API_URL = "https://note-api-zeta.vercel.app/api/note/";
+const API_URL = "https://note-api-zeta.vercel.app/api/note/";
 
 
 const getNotes = async() => {

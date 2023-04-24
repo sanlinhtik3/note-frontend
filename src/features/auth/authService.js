@@ -1,10 +1,10 @@
 import axios from "axios"
 
 // local
-const API_URL = "http://localhost:8000/api/user/";
+// const API_URL = "http://localhost:8000/api/user/";
 
 // onvercel
-// const API_URL = "https://note-api-zeta.vercel.app/api/user/";
+const API_URL = "https://note-api-zeta.vercel.app/api/user/";
 
 const registerUser = async(userData) => {
     const response = await axios.post(API_URL, userData)
