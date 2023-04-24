@@ -28,7 +28,7 @@ const EditPost = () => {
     // console.log(data.title)
     
     useEffect(() => {
-      fetch(`http://localhost:8000/api/note/?id=${id}`)
+      fetch(`https://note-api-zeta.vercel.app/api/note?id=${id}`)
         .then((res) => res.json())
         .then((data) => setData(data));
     }, []);
