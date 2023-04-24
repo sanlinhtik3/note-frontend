@@ -14,7 +14,7 @@ const Detail = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/api/note?id=${id}`)
+      fetch(`https://note-api-zeta.vercel.app/api/note?id=${id}`)
             .then((res) => res.json())
             .then((data) => setData(data));
     }, []);
