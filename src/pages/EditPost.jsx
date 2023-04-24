@@ -53,7 +53,7 @@ const EditPost = () => {
           <i className="bi bi-arrow-left-circle"></i> Back
         </Link>
         <h1 className="mb-10 mt-5">Edit Post</h1>
-        <div className="grid grid-cols-2 gap-x-5 bg-slate-50 p-5 rounded-xl">
+        <div className="grid lg:grid-cols-2 lg:gap-x-5 bg-slate-50 p-5 rounded-xl">
           <form className="space-y-6 bg-white p-5 rounded-xl h-auto" onSubmit={handleSubmit}>
             <div className="flex flex-col">
               <label
